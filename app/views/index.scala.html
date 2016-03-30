@@ -1,0 +1,194 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+
+    @*
+     * Get an `Html` object by calling the built-in Play welcome
+     * template and passing a `String` message.
+     *@
+<form class="form-horizontal">
+ <fieldset>
+
+  <!-- Form Name -->
+  <legend></legend>
+
+  <!-- Select Basic -->
+  <div class="form-group">
+   <label class="col-md-4 control-label" for="charityid">Charity Name</label>
+   <div class="col-md-4">
+    <select id="charityid" name="charityid" class="form-control">
+    </select>
+   </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+   <label class="col-md-4 control-label" for="donar_name">Name</label>
+   <div class="col-md-4">
+    <input id="donar_name" name="donar_name" type="text" placeholder="Name" class="form-control input-md">
+
+   </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+   <label class="col-md-4 control-label" for="address">Address</label>
+   <div class="col-md-4">
+    <input id="address" name="address" type="text" placeholder="123 Main St" class="form-control input-md">
+
+   </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+   <label class="col-md-4 control-label" for="city">City</label>
+   <div class="col-md-4">
+    <input id="city" name="city" type="text" placeholder="Chicago" class="form-control input-md">
+
+   </div>
+  </div>
+
+  <!-- Select Basic -->
+  <div class="form-group">
+   <label class="col-md-4 control-label" for="state">State</label>
+   <div class="col-md-4">
+    <select id="state" name="state" class="form-control">
+     <option value="">Illinois</option>
+     <option value="">Alabama</option>
+     <option value="">Alaska</option>
+     <option value="">Arizona</option>
+     <option value="">Arkansas</option>
+     <option value="">California</option>
+     <option value="">Colorado</option>
+     <option value="">Connecticut</option>
+     <option value="">Delaware</option>
+     <option value="">Florida</option>
+     <option value="">Georgia</option>
+     <option value="">Hawaii</option>
+     <option value="">Idaho</option>
+     <option value="">Indiana</option>
+     <option value="">Iowa</option>
+     <option value="">Kansas</option>
+     <option value="">Kentucky</option>
+     <option value="">Louisiana</option>
+     <option value="">Maine</option>
+     <option value="">Maryland</option>
+     <option value="">Massachusetts</option>
+     <option value="">Michigan</option>
+     <option value="">Minnesota</option>
+     <option value="">Mississippi</option>
+     <option value="">Missouri</option>
+     <option value="">Montana</option>
+     <option value="">Nebraska</option>
+     <option value="">Nevada</option>
+     <option value="">New Hampshire</option>
+     <option value="">New Jersey</option>
+     <option value="">New Mexico</option>
+     <option value="">New York</option>
+     <option value="">North Carolina</option>
+     <option value="">North Dakota</option>
+     <option value="">Ohio</option>
+     <option value="">Oklahoma</option>
+     <option value="">Oregon</option>
+     <option value="">Pennsylvania</option>
+     <option value="">Rhode Island</option>
+     <option value="">South Carolina</option>
+     <option value="">South Dakota</option>
+     <option value="">Tennessee</option>
+     <option value="">Texas</option>
+     <option value="">Utah</option>
+     <option value="">Vermont</option>
+     <option value="">Virginia</option>
+     <option value="">Washington</option>
+     <option value="">West Virginia</option>
+     <option value="">Wisconsin</option>
+     <option value="">Wyoming</option>
+     <option value="">District of Columbia</option>
+     <option value="">Puerto Rico</option>
+     <option value="">Guam</option>
+     <option value="">American Samoa</option>
+     <option value="">U.S. Virgin Islands</option>
+     <option value="">Northern Mariana Islands</option>
+    </select>
+   </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+   <label class="col-md-4 control-label" for="zip">Zip</label>
+   <div class="col-md-4">
+    <input id="zip" name="zip" type="text" placeholder="60103" class="form-control input-md">
+
+   </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+   <label class="col-md-4 control-label" for="email">Email</label>
+   <div class="col-md-4">
+    <input id="email" name="email" type="text" placeholder="somebody@@example.com" class="form-control input-md">
+
+   </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+   <label class="col-md-4 control-label" for="phone">Phone</label>
+   <div class="col-md-4">
+    <input id="phone" name="phone" type="text" placeholder="123-123-1234" class="form-control input-md">
+
+   </div>
+  </div>
+
+  <!-- Multiple Radios -->
+  <div class="form-group">
+   <label class="col-md-4 control-label" for="Pledge">Pledge</label>
+   <div class="col-md-4">
+    <div class="radio">
+     <label for="Pledge-0">
+      <input type="radio" name="Pledge" id="Pledge-0" value="1" checked="checked">
+      One-time flat donation
+     </label>
+    </div>
+    <div class="radio">
+     <label for="Pledge-1">
+      <input type="radio" name="Pledge" id="Pledge-1" value="2">
+      For every birdie made
+     </label>
+    </div>
+   </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+   <label class="col-md-4 control-label" for="amount">Pledge Amount</label>
+   <div class="col-md-4">
+    <input id="amount" name="amount" type="text" placeholder="$20" class="form-control input-md">
+
+   </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+   <label class="col-md-4 control-label" for="birdieguess">Guess Birdie</label>
+   <div class="col-md-4">
+    <input id="birdieguess" name="birdieguess" type="text" placeholder="1000" class="form-control input-md">
+    <span class="help-block">* Only 1 grand prize will be awarded. Void where prohibited by law.</span>
+   </div>
+  </div>
+
+ </fieldset>
+</form>
+
+
+
+}
